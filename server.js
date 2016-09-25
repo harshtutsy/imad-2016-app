@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var content= {
+var articleone= {
     title: 'Article-one | Harsh Agrawal',
     heading: 'Article-one',
     date: '05sept-2016',
@@ -71,7 +71,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(createtemplate(articleone));
 });
 
 app.get('/article-two', function(req,res){
