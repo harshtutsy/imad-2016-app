@@ -22,7 +22,7 @@ var articleone= {
     
     
 `    
-}
+};
 
 
 
