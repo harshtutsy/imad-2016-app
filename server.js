@@ -5,20 +5,56 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone= {
-    title: 'Article-one | Harsh Agrawal',
-    heading: 'Article-one',
-    date: '05sept-2016',
-    content: `
-    <p>
-        This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
-                </p>
-                <p>
-                    This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
-                </p>
-                <p>
-                    This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
-                </p>`    
+
+var articles = {
+    articleone : {
+        title: 'Article-one | Harsh Agrawal',
+        heading: 'Article-one',
+        date: '05sept-2016',
+        content: `
+        <p>
+            This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
+                    </p>
+                    <p>
+                        This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
+                    </p>
+                    <p>
+                        This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
+                    </p>`    
+    },
+    articletwo : {
+        title: 'Article-two | Harsh Agrawal',
+        heading: 'Article-two',
+        date: '10sept-2016',
+        content: `
+        <p>
+            This is article-two for my first article. This is article-one for my first article. This is article-one for my first article. This is article-two for my first article. This is article-one for my first article. This is article-one for my first article.
+                    </p>
+                    <p>
+                        This is article-two for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
+                    </p>
+                    <p>
+                        This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
+                    </p>`    
+        
+        
+    },
+    articlethree : {
+        title: 'Article-three | Harsh Agrawal',
+        heading: 'Article-three',
+        date: '15sept-2016',
+        content: `
+        <p>
+            This is article-three for my first article. This is article-one for my first article. This is article-one for my first article. This is article-three for my first article. This is article-one for my first article. This is article-one for my first article.
+                    </p>
+                    <p>
+                        This is article-three for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
+                    </p>
+                    <p>
+                        This is article-three for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
+                    </p>`    
+        
+    }
 };
 
 
