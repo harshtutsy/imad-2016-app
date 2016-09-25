@@ -125,15 +125,29 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 
+//var names= [];
+//app.get('/submit-name/:name', function (req, res) {
+//  var name = req.params.name;
+  //names.push(name);
+  //json (Javascript Object Notation) Method of converting javascript to string
+  
+  
+//  res.send(JSON.stringify(names));
+// });
+
 var names= [];
-app.get('/submit-name/:name', function (req, res) {
-  var name = req.params.name;
+app.get('/submit-name', function (req, res) {  // URL: submit-name?name=xxx
+  var name = req.query.name;
   names.push(name);
   //json (Javascript Object Notation) Method of converting javascript to string
   
   
   res.send(JSON.stringify(names));
 });
+
+
+
+
 
 
 app.get('/ui/main.js', function (req, res) {
