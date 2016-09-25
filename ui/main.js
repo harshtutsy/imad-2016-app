@@ -14,4 +14,17 @@ function moveRight(){
 img.onclick = function () {
   //Every 100mili-second, apply moveright  function
   var interval= setInterval(moveRight, 50);
-}; 
+};
+
+
+var button= document.getElementById("counter");
+var couner=0;
+button.onclick = function(){
+    
+    
+    //render the variable in correct span.
+    counter=counter + 1;
+    var span= document.getElementById("count");
+    span.innerHTML = counter.toString();
+    
+}
