@@ -44,8 +44,7 @@ button.onclick = function() {
 
 
 //submit name
-var nameinput = document.getElementById("name");
-var name = nameinput.value;
+
 var submit= document.getElementById("submit_btn");
 submit.onclick = function() {
     //Make request to server and send name
@@ -72,7 +71,8 @@ submit.onclick = function() {
         //not done yet
     };
     
-    
+    var nameinput = document.getElementById("name");
+    var name = nameinput.value;
     request.open('GET', 'http://harshtutsy.imad.hasura-app.io/submit-name?name=' + name , true );
     request.send(null);
     
