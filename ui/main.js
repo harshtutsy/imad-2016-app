@@ -7,11 +7,11 @@ element.innerHTML= "New Value";
 var img= document.getElementById("madi")
 var marginleft= 0;
 function moveRight(){
-    marginleft=marginleft + 10;
+    marginleft=marginleft + 3;
     img.style.marginLeft= marginleft +"px";
     
 }
 img.onclick = function () {
   //Every 100mili-second, apply moveright  function
-  var interval= setInterval(moveRight, 100);
+  var interval= setInterval(moveRight, 50);
 }; 
