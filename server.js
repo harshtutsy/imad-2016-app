@@ -13,14 +13,16 @@ var articles = {
         date: '05sept-2016',
         content: `
         <p>
-            This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
+            This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-two for my first article. This is article-one for my first article. This is article-one for my first article.
                     </p>
                     <p>
-                        This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
+                        This is article-two for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
                     </p>
                     <p>
                         This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
                     </p>`    
+        
+        
     },
     'article-two' : {
         title: 'Article-two | Harsh Agrawal',
