@@ -18,10 +18,7 @@ var articleone= {
                 </p>
                 <p>
                     This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article. This is article-one for my first article.
-                </p>
-    
-    
-`    
+                </p>`    
 };
 
 
@@ -58,6 +55,7 @@ function createtemplate (data){
             </Body>
         </HTML>
         `;
+        return htmltemplate;
     
 }
 
